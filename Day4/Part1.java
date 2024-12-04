@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Part1 {
 
-    static String filename = "Day4/input.txt";
+    static String filename = "Day4/input.txt";  // answer = 2562
     // static String filename = "Day4/testinput.txt"; // answer = 18
 
     public static void main(String[] args) {
