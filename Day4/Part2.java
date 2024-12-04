@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.ArrayList;
 
 public class Part2 {
     // static String filename = "Day4/input.txt";
@@ -8,7 +9,6 @@ public class Part2 {
     public static void main(String[] args) {
         try {
             BufferedReader bf = new BufferedReader(new FileReader(filename));
-
 
         } catch (Exception e) {
             e.printStackTrace();
