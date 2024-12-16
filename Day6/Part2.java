@@ -36,8 +36,6 @@ public class Part2 {
                 map[i] = startMap.get(i);
             }
 
-
-
             int count = 0;
             for (int i = 0; i < lines; i++) { // ypos
                 for (int j = 0; j < lineLen; j++) { // xpos
