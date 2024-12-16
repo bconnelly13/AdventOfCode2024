@@ -26,21 +26,20 @@ public class Part2 {
             int answer = 0;
             // boolean[][] needed = new boolean[numLines][lineLen];
             // for (int i = 0; i < numLines; i++) {
-            //     for (int j = 0; j < lineLen; j++) {
-            //         needed[i][j] = false;
-            //     }
+            // for (int j = 0; j < lineLen; j++) {
+            // needed[i][j] = false;
             // }
-
+            // }
 
             for (int i = 1; i < numLines - 1; i++) {
                 for (int j = 1; j < lineLen - 1; j++) {
-                    String middle = lines.get(i).substring(j, j+1);
+                    String middle = lines.get(i).substring(j, j + 1);
                     if (middle.equals("A")) {
-                        String substr = lines.get(i-1).substring(j-1, j) +
-                                        lines.get(i-1).substring(j+1, j+2) +
-                                        middle +
-                                        lines.get(i+1).substring(j-1, j) + 
-                                        lines.get(i+1).substring(j+1, j+2);
+                        String substr = lines.get(i - 1).substring(j - 1, j) +
+                                lines.get(i - 1).substring(j + 1, j + 2) +
+                                middle +
+                                lines.get(i + 1).substring(j - 1, j) +
+                                lines.get(i + 1).substring(j + 1, j + 2);
                         if (options.contains(substr)) {
                             answer++;
                         }
@@ -51,14 +50,14 @@ public class Part2 {
             System.out.printf("Answer = %d\n", answer);
 
             // for (int i = 0; i < numLines; i++) {
-            //     for (int j = 0; j < lineLen; j++) {
-            //         if (needed[i][j]) {
-            //             System.out.print(lines.get(i).substring(j, j+1));
-            //         } else {
-            //             System.out.print(".");
-            //         }
-            //     }
-            //     System.out.println();
+            // for (int j = 0; j < lineLen; j++) {
+            // if (needed[i][j]) {
+            // System.out.print(lines.get(i).substring(j, j+1));
+            // } else {
+            // System.out.print(".");
+            // }
+            // }
+            // System.out.println();
             // }
 
         } catch (Exception e) {
