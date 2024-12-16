@@ -105,17 +105,6 @@ public class Part1 {
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
             System.out.printf("Part 1 Answer: %d\n", answer);
         } catch (Exception e) {
             System.out.println("try catch error");
